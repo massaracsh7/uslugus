@@ -1,0 +1,21 @@
+.footer {
+  padding-bottom: 55px;
+
+  &__container {
+    display: grid;
+    gap: 14px;
+  }
+
+  &__copyright {
+    grid-row: 3/4;
+  }
+
+  &__contact {
+    grid-row: 2/4;
+    justify-self: end;
+    p:first-child {
+      margin-bottom: 7px;
+    }
+  }
+}
+
