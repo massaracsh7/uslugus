@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     gap: 16px 12px;
 
+    @include mobile {
+      gap: 8px;
+    }
+
     &_user, &_service {
       margin-bottom: 46px;
     }
@@ -15,10 +19,17 @@
     &_review {
       margin-bottom: 32px;
     }
+
+    &_add-review {
+      margin-bottom: 32px;
+    }
   }
 
   &__label {
     flex: 1 1 310px;
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__text {
@@ -88,6 +99,11 @@
     min-height: 114px;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 32px;
+    }
   }
 
   &__wrapper-publish {
@@ -95,6 +111,12 @@
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      gap: 16px;
+    }
   }
 
   &__submit {
@@ -102,6 +124,10 @@
     padding: 10px 20px;
     background-color: #FFD600;
     border-radius: 4px;
+
+    @include mobile {
+      font-size: 14px;
+    }
 
     &_sign-up {
       align-self: flex-end;
